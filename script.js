@@ -3,8 +3,9 @@ const generateButton = document.getElementById("generate-grid");
 let squares;
 
 function squareHover(square) {
-  console.log(square);
-  square.style.backgroundColor = "black";
+  //console.log(square);
+  square.style.backgroundColor =
+    "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 function generateGrid(squares) {
